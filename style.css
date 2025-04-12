@@ -1,0 +1,54 @@
+/* Cài đặt chung cho body */
+body {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    width: 250px;
+    background-color: #f9f9f9; /* Thêm màu nền nhẹ để giao diện dễ nhìn hơn */
+    box-sizing: border-box; /* Đảm bảo các phần tử không bị lấn ra ngoài container */
+}
+
+/* Style cho các input text */
+input {
+    width: 100%;
+    padding: 8px; /* Tăng padding để ô nhập dễ nhìn hơn */
+    margin: 8px 0; /* Cải thiện margin giữa các ô nhập */
+    border: 1px solid #ccc; /* Viền nhẹ cho input */
+    border-radius: 4px; /* Bo góc nhẹ cho các input */
+    box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng đến chiều rộng */
+}
+
+/* Style cho button */
+button {
+    width: 100%;
+    padding: 8px; /* Tăng padding để nút dễ bấm hơn */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px; /* Bo góc cho nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi hover vào nút */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước tổng thể */
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng mượt mà cho hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Thay đổi màu nền khi hover */
+}
+
+/* Style cho thông báo trạng thái */
+#status {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center; /* Căn giữa thông báo */
+    padding: 5px;
+}
+
+/* Thông báo thành công */
+#status.success {
+    color: #4CAF50; /* Màu xanh cho thông báo thành công */
+}
+
+/* Thông báo lỗi */
+#status.error {
+    color: #FF0000; /* Màu đỏ cho thông báo lỗi */
+}
